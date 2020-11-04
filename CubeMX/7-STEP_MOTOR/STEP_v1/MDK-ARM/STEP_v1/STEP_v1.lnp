@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"step_v1\startup_stm32f407xx.o"
+"step_v1\motor_v1.o"
+"step_v1\main.o"
+"step_v1\stm32f4xx_it.o"
+"step_v1\stm32f4xx_hal_msp.o"
+"step_v1\stm32f4xx_hal_tim.o"
+"step_v1\stm32f4xx_hal_tim_ex.o"
+"step_v1\stm32f4xx_hal_rcc.o"
+"step_v1\stm32f4xx_hal_rcc_ex.o"
+"step_v1\stm32f4xx_hal_flash.o"
+"step_v1\stm32f4xx_hal_flash_ex.o"
+"step_v1\stm32f4xx_hal_flash_ramfunc.o"
+"step_v1\stm32f4xx_hal_gpio.o"
+"step_v1\stm32f4xx_hal_dma_ex.o"
+"step_v1\stm32f4xx_hal_dma.o"
+"step_v1\stm32f4xx_hal_pwr.o"
+"step_v1\stm32f4xx_hal_pwr_ex.o"
+"step_v1\stm32f4xx_hal_cortex.o"
+"step_v1\stm32f4xx_hal.o"
+"step_v1\stm32f4xx_hal_exti.o"
+"step_v1\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "STEP_v1\STEP_v1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STEP_v1.map" -o STEP_v1\STEP_v1.axf

@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"uart_ttl\startup_stm32f407xx.o"
+"uart_ttl\main.o"
+"uart_ttl\stm32f4xx_it.o"
+"uart_ttl\stm32f4xx_hal_msp.o"
+"uart_ttl\stm32f4xx_hal_tim.o"
+"uart_ttl\stm32f4xx_hal_tim_ex.o"
+"uart_ttl\stm32f4xx_hal_uart.o"
+"uart_ttl\stm32f4xx_hal_rcc.o"
+"uart_ttl\stm32f4xx_hal_rcc_ex.o"
+"uart_ttl\stm32f4xx_hal_flash.o"
+"uart_ttl\stm32f4xx_hal_flash_ex.o"
+"uart_ttl\stm32f4xx_hal_flash_ramfunc.o"
+"uart_ttl\stm32f4xx_hal_gpio.o"
+"uart_ttl\stm32f4xx_hal_dma_ex.o"
+"uart_ttl\stm32f4xx_hal_dma.o"
+"uart_ttl\stm32f4xx_hal_pwr.o"
+"uart_ttl\stm32f4xx_hal_pwr_ex.o"
+"uart_ttl\stm32f4xx_hal_cortex.o"
+"uart_ttl\stm32f4xx_hal.o"
+"uart_ttl\stm32f4xx_hal_exti.o"
+"uart_ttl\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "UART_TTL\UART_TTL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "UART_TTL.map" -o UART_TTL\UART_TTL.axf

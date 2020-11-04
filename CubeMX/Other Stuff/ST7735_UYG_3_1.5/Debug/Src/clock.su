@@ -1,0 +1,9 @@
+clock.c:12:6:Draw_clock_hand	16	static
+clock.c:18:8:degree_to_radian	8	static
+clock.c:26:5:min_x_coordinate_finder	16	static
+clock.c:40:5:min_y_coordinate_finder	16	static
+clock.c:53:5:sec_x_coordinate_finder	16	static
+clock.c:65:5:sec_y_coordinate_finder	16	static
+clock.c:77:5:hr_x_coordinate_finder	24	static
+clock.c:90:5:hr_y_coordinate_finder	24	static
+clock.c:107:6:Draw_clock	32	static

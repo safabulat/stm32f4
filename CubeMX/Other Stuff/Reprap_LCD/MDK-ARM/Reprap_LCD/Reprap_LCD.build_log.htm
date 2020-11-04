@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.30.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Safa Bulat, student, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.30.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.30.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.42.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Seffet\Desktop\PCWorkStuff\Embedded\CubeMX\Reprap_LCD\MDK-ARM\Reprap_LCD.uvprojx
+Project File Date:  08/17/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Reprap_LCD'
+compiling u8g_arm.c...
+..\..\..\..\..\..\Downloads\u8glib_arm_v1.18.1\cust\LPC11xx.h(92): warning:  #375-D: declaration requires a typedef name
+  }; //IRQn_Type;
+../Drivers/CMSIS/Include/core_cm0.h(80): error:  #35: #error directive: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+      #error "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+..\..\..\..\..\..\Downloads\u8glib_arm_v1.18.1\cust\u8g_arm.c: 1 warning, 1 error
+compiling main.c...
+..\..\..\..\..\..\Downloads\u8glib_arm_v1.18.1\cust\LPC11xx.h(92): warning:  #375-D: declaration requires a typedef name
+  }; //IRQn_Type;
+..\..\..\..\..\..\Downloads\u8glib_arm_v1.18.1\cust\LPC11xx.h(102): warning:  #47-D: incompatible redefinition of macro "__MPU_PRESENT"  (declared at line 49 of "../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h")
+  #define __MPU_PRESENT             0         /*!< MPU present or not                               */
+..\..\..\..\..\..\Downloads\u8glib_arm_v1.18.1\cust\LPC11xx.h(103): warning:  #47-D: incompatible redefinition of macro "__NVIC_PRIO_BITS"  (declared at line 50 of "../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h")
+  #define __NVIC_PRIO_BITS          2         /*!< Number of Bits used for Priority Levels          */
+..\..\..\..\..\..\Downloads\u8glib_arm_v1.18.1\cust\LPC11xx.h(104): warning:  #47-D: incompatible redefinition of macro "__Vendor_SysTickConfig"  (declared at line 51 of "../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h")
+  #define __Vendor_SysTickConfig    0         /*!< Set to 1 if different SysTick Config is used     */
+../Drivers/CMSIS/Include/core_cm0.h(71): warning:  #47-D: incompatible redefinition of macro "__CORTEX_M"  (declared at line 71 of "../Drivers/CMSIS/Include/core_cm4.h")
+  #define __CORTEX_M                (0U)                                   /*!< Cortex-M Core */
+../Drivers/CMSIS/Include/core_cm0.h(76): warning:  #47-D: incompatible redefinition of macro "__FPU_USED"  (declared at line 79 of "../Drivers/CMSIS/Include/core_cm4.h")
+  #define __FPU_USED       0U
+../Drivers/CMSIS/Include/core_cm0.h(80): error:  #35: #error directive: "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+      #error "Compiler generates FPU instructions for a device without an FPU (check __FPU_PRESENT)"
+../Src/main.c: 6 warnings, 1 error
+"Reprap_LCD\Reprap_LCD.axf" - 2 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.14.0.pack
+                Keil.STM32F4xx_DFP.2.14.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Reprap_LCD
+  C:\Users\Seffet\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\Seffet\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

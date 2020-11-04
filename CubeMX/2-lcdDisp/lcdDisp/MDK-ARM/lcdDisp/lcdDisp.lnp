@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"lcddisp\startup_stm32f407xx.o"
+"lcddisp\stm_my_lcd16x2.o"
+"lcddisp\main.o"
+"lcddisp\stm32f4xx_it.o"
+"lcddisp\stm32f4xx_hal_msp.o"
+"lcddisp\stm32f4xx_hal_tim.o"
+"lcddisp\stm32f4xx_hal_tim_ex.o"
+"lcddisp\stm32f4xx_hal_rcc.o"
+"lcddisp\stm32f4xx_hal_rcc_ex.o"
+"lcddisp\stm32f4xx_hal_flash.o"
+"lcddisp\stm32f4xx_hal_flash_ex.o"
+"lcddisp\stm32f4xx_hal_flash_ramfunc.o"
+"lcddisp\stm32f4xx_hal_gpio.o"
+"lcddisp\stm32f4xx_hal_dma_ex.o"
+"lcddisp\stm32f4xx_hal_dma.o"
+"lcddisp\stm32f4xx_hal_pwr.o"
+"lcddisp\stm32f4xx_hal_pwr_ex.o"
+"lcddisp\stm32f4xx_hal_cortex.o"
+"lcddisp\stm32f4xx_hal.o"
+"lcddisp\stm32f4xx_hal_exti.o"
+"lcddisp\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "lcdDisp\lcdDisp.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "lcdDisp.map" -o lcdDisp\lcdDisp.axf
