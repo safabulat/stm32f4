@@ -1,0 +1,133 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.30.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Safa Bulat, student, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.30.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.30.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.42.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Seffet\Desktop\PCWorkStuff\Embedded\CubeMX\UART_WIFI\WIFI_SPI\MDK-ARM\WIFI_SPI.uvprojx
+Project File Date:  08/06/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'WIFI_SPI'
+compiling ESP8266_HAL.c...
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(44): warning:  #223-D: function "HAL_SPI_Transmit" declared implicitly
+  	HAL_SPI_Transmit();
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(45): warning:  #223-D: function "Spi_sendstring" declared implicitly
+  	Spi_sendstring("AT+RST\r\n", wifi_spi);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(45): error:  #20: identifier "hspi1" is undefined
+  	Spi_sendstring("AT+RST\r\n", wifi_spi);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(46): warning:  #223-D: function "spi_sendstring" declared implicitly
+  	spi_sendstring("RESETTING.", pc_spi);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(46): error:  #20: identifier "pc_spi" is undefined
+  	spi_sendstring("RESETTING.", pc_spi);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(50): warning:  #223-D: function "HAL_Delay" declared implicitly
+  		HAL_Delay(1000);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(55): warning:  #223-D: function "Wait_for" declared implicitly
+  	while(!(Wait_for("AT\r\r\n\r\nOK\r\n", wifi_spi)));
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(61): warning:  #223-D: function "Wait_for" declared implicitly
+  	while (!(Wait_for("AT+CWMODE=1\r\r\n\r\nOK\r\n", wifi_spi)));
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(69): warning:  #223-D: function "Wait_for" declared implicitly
+  	while (!(Wait_for("WIFI GOT IP\r\n\r\nOK\r\n", wifi_spi)));
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(76): warning:  #223-D: function "Wait_for" declared implicitly
+  	while (!(Wait_for("CIFSR:STAIP,\"", wifi_spi)));
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(77): warning:  #223-D: function "Copy_upto" declared implicitly
+  	while (!(Copy_upto("\"",buffer, wifi_spi)));
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(78): warning:  #223-D: function "Wait_for" declared implicitly
+  	while (!(Wait_for("OK\r\n", wifi_spi)));
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(86): warning:  #223-D: function "Wait_for" declared implicitly
+  	while (!(Wait_for("AT+CIPMUX=1\r\r\n\r\nOK\r\n", wifi_spi)));
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(90): warning:  #223-D: function "Wait_for" declared implicitly
+  	while (!(Wait_for("OK\r\n", wifi_spi)));
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(105): warning:  #223-D: function "spi_sendstring" declared implicitly
+  	spi_sendstring(data, wifi_spi);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(105): error:  #20: identifier "hspi1" is undefined
+  	spi_sendstring(data, wifi_spi);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(106): warning:  #223-D: function "Wait_for" declared implicitly
+  	while (!(Wait_for(">", wifi_spi)));
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(108): warning:  #223-D: function "Wait_for" declared implicitly
+  	while (!(Wait_for("SEND OK", wifi_spi)));
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(111): warning:  #223-D: function "Wait_for" declared implicitly
+  	while (!(Wait_for("OK\r\n", wifi_spi)));
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(148): warning:  #223-D: function "Get_after" declared implicitly
+  	while (!(Get_after("+IPD,", 1, &Link_ID, wifi_spi)));
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(148): error:  #20: identifier "hspi1" is undefined
+  	while (!(Get_after("+IPD,", 1, &Link_ID, wifi_spi)));
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(150): warning:  #223-D: function "Copy_upto" declared implicitly
+  	while (!(Copy_upto(" HTTP/1.1", buftocopyinto, wifi_spi)));
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(150): error:  #20: identifier "hspi1" is undefined
+  	while (!(Copy_upto(" HTTP/1.1", buftocopyinto, wifi_spi)));
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(151): warning:  #223-D: function "Look_for" declared implicitly
+  	if (Look_for("/ledon", buftocopyinto) == 1)
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(153): warning:  #223-D: function "HAL_GPIO_WritePin" declared implicitly
+  		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15,  GPIO_PIN_SET);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(153): error:  #20: identifier "GPIOD" is undefined
+  		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15,  GPIO_PIN_SET);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(153): error:  #20: identifier "GPIO_PIN_15" is undefined
+  		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15,  GPIO_PIN_SET);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(153): error:  #20: identifier "GPIO_PIN_SET" is undefined
+  		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15,  GPIO_PIN_SET);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(159): warning:  #223-D: function "HAL_GPIO_WritePin" declared implicitly
+  		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15, GPIO_PIN_RESET);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(159): error:  #20: identifier "GPIOD" is undefined
+  		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15, GPIO_PIN_RESET);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(159): error:  #20: identifier "GPIO_PIN_15" is undefined
+  		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15, GPIO_PIN_RESET);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(159): error:  #20: identifier "GPIO_PIN_RESET" is undefined
+  		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15, GPIO_PIN_RESET);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(167): warning:  #223-D: function "HAL_GPIO_WritePin" declared implicitly
+  		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15,  GPIO_PIN_RESET);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(167): error:  #20: identifier "GPIOD" is undefined
+  		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15,  GPIO_PIN_RESET);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(167): error:  #20: identifier "GPIO_PIN_15" is undefined
+  		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15,  GPIO_PIN_RESET);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(167): error:  #20: identifier "GPIO_PIN_RESET" is undefined
+  		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_15,  GPIO_PIN_RESET);
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c(169): error: At end of source:  #67: expected a "}"
+..\..\..\Libs\ESP8266_HAL\ESP8266_HAL.c: 22 warnings, 15 errors
+compiling main.c...
+"WIFI_SPI\WIFI_SPI.axf" - 15 Error(s), 22 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.14.0.pack
+                Keil.STM32F4xx_DFP.2.14.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_WIFI_SPI
+  C:\Users\Seffet\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\Seffet\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

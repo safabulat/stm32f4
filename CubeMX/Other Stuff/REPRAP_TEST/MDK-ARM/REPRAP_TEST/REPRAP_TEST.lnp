@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"reprap_test\startup_stm32f407xx.o"
+"reprap_test\main.o"
+"reprap_test\stm32f4xx_it.o"
+"reprap_test\stm32f4xx_hal_msp.o"
+"reprap_test\reprap.o"
+"reprap_test\stm32f4xx_hal_tim.o"
+"reprap_test\stm32f4xx_hal_tim_ex.o"
+"reprap_test\stm32f4xx_hal_rcc.o"
+"reprap_test\stm32f4xx_hal_rcc_ex.o"
+"reprap_test\stm32f4xx_hal_flash.o"
+"reprap_test\stm32f4xx_hal_flash_ex.o"
+"reprap_test\stm32f4xx_hal_flash_ramfunc.o"
+"reprap_test\stm32f4xx_hal_gpio.o"
+"reprap_test\stm32f4xx_hal_dma_ex.o"
+"reprap_test\stm32f4xx_hal_dma.o"
+"reprap_test\stm32f4xx_hal_pwr.o"
+"reprap_test\stm32f4xx_hal_pwr_ex.o"
+"reprap_test\stm32f4xx_hal_cortex.o"
+"reprap_test\stm32f4xx_hal.o"
+"reprap_test\stm32f4xx_hal_exti.o"
+"reprap_test\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "REPRAP_TEST\REPRAP_TEST.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "REPRAP_TEST.map" -o REPRAP_TEST\REPRAP_TEST.axf

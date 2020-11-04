@@ -1,0 +1,9 @@
+ds18b20_mflib.c:58:6:DelayMicro	8	static
+ds18b20_mflib.c:72:9:ds18b20_init_seq	8	static
+ds18b20_mflib.c:173:6:ds18b20_write_byte	24	static
+ds18b20_mflib.c:118:6:ds18b20_send_function_cmd	8	static
+ds18b20_mflib.c:135:6:ds18b20_send_rom_cmd	0	static
+ds18b20_mflib.c:201:9:ds18b20_read_bit	8	static
+ds18b20_mflib.c:222:9:ds18b20_read_byte	16	static
+ds18b20_mflib.c:93:10:ds18b20_read_rom_cmd	24	static
+ds18b20_mflib.c:146:7:ds18b20_read_temp	24	static
